@@ -2,7 +2,7 @@
 
         
         document.getElementById('blog-button').addEventListener('click',function(){
-        document.getElementById('blog-button').style.backgroundColor = "#B4F461";
+        // document.getElementById('blog-button').style.backgroundColor = "#B4F461";
                 })
         // document.getElementById('donation-button').addEventListener('click',function(){
         // document.getElementById('donation-button').style.backgroundColor = "#B4F461";

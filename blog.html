@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Page</title>
+    <style>
+        body{
+    
+  font-family: "Lexend", sans-serif;
+  }
+  
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <a href="./index.html">Donation Home page</a>
+    <header class="px-36">
+        <nav class="py-8 flex justify-between items-center">
+            <button id="blog-button" class="text-sm font-semibold bg-[#B4F461] rounded-lg px-8 py-3"> Blog</button>
+            <div class="flex items-center gap-x-3"> <img src="./assets/logo.png" alt=""><h1 class="text-sm font-semibold">
+                Donate Bangladesh</h1></div>
+            <div class="flex items-center gap-x-2"> <img src="./assets/coin.png" alt="">
+                <p id="account-balance">5500</p><p>BDT</p></div>
+
+        </nav>
+        <div class="py-8">
+            <h1 class="text-xl font-bold">Important FAQ ?</h1>
+            <div>
+                <div class="collapse bg-base-200">
+                    <input type="radio" name="my-accordion-1" />
+                    <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-content">
+                      <p>hello</p>
+                    </div>
+                </div>
+                <div class="collapse bg-base-200">
+                    <input type="radio" name="my-accordion-1" />
+                    <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                    <div class="collapse-content">
+                      <p>hello</p>
+                    </div>
+                </div>
+                <div class="collapse bg-base-200">
+                    <input type="radio" name="my-accordion-1" />
+                    <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful ?</div>
+                    <div class="collapse-content">
+                      <p>hello</p>
+                    </div>
+                </div>
+                <div class="collapse bg-base-200">
+                    <input type="radio" name="my-accordion-1" />
+                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM ?</div>
+                    <div class="collapse-content">
+                      <p>hello</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        
+    </header>
+    <script src="./index.js"></script>
 </body>
 </html>
