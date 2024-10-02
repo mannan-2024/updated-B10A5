@@ -1,15 +1,7 @@
 
 
         
-        document.getElementById('blog-button').addEventListener('click',function(){
-        // document.getElementById('blog-button').style.backgroundColor = "#B4F461";
-                })
-        // document.getElementById('donation-button').addEventListener('click',function(){
-        // document.getElementById('donation-button').style.backgroundColor = "#B4F461";
-        //                         })
-        // document.getElementById('history-button').addEventListener('click',function(){
-        // document.getElementById('history-button').style.backgroundColor = "#B4F461";
-                                                // })
+        
         document.getElementById('donate-button').addEventListener('click',function(){
         document.getElementById('donate-button').style.backgroundColor = "#B4F461";
                                                                 })
@@ -19,17 +11,26 @@
                 const donateNumber = parseFloat(donateMoney);
                 const balance = document.getElementById('balance-amount').innerText ;
                 const balanceNumber = parseFloat(balance);
-                const newBalance = donateNumber + balanceNumber;
-                document.getElementById('balance-amount').innerText = newBalance;
-
                 const accountBalance = document.getElementById('account-balance').innerText;
                 const accountBalanceNumber = parseFloat(accountBalance);
+                if (!isNaN(donateMoney) === true && donateNumber > 0 ) {
+                                       
+                const newBalance = donateNumber + balanceNumber;
+                document.getElementById('balance-amount').innerText = newBalance;
                 const newAccountBalance = accountBalanceNumber - donateNumber;
                 document.getElementById('account-balance').innerText = newAccountBalance;
-
                 const entry = document.createElement('p');
                 entry.innerText = `Tk.${donateMoney} is donated for Donate for flood in Noakhali,Bangladesh`;
                 document.getElementById('Transaction-history').appendChild(entry);
+                }
+                else{
+                        alert('invalid donation amount');
+                }
+                
+
+                          
+
+                
         })
        
         document.getElementById('history-button').addEventListener('click',function(){
